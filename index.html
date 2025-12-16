@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kopi Nusantara - Beranda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+                <img src="images/logokopi.png" alt="Logo" width="40" height="40" class="me-2 rounded-circle"/>
+                <span>KOPI NUSANTARA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home me-1"></i>Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html"><i class="fas fa-info-circle me-1"></i>Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produk.html"><i class="fas fa-coffee me-1"></i>Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html"><i class="fas fa-images me-1"></i>Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html"><i class="fas fa-envelope me-1"></i>Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-brown text-white py-5" style="min-height: 70vh; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200'); background-size: cover; background-position: center; opacity: 0.15;"></div>
+        <div class="container py-5 position-relative" style="z-index: 1;">
+            <div class="row align-items-center" style="min-height: 60vh;">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-3 fw-bold mb-4">Kopi Nusantara</h1>
+                    <p class="lead mb-4">Menyajikan kopi lokal berkualitas tinggi dari seluruh Nusantara</p>
+                    <div>
+                        <a href="produk.html" class="btn btn-light btn-lg me-2 mb-2">
+                            <i class="fas fa-shopping-cart me-2"></i>Lihat Produk
+                        </a>
+                        <a href="kontak.html" class="btn btn-outline-light btn-lg mb-2">
+                            <i class="fas fa-phone me-2"></i>Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <i class="fas fa-mug-hot float-animation" style="font-size: 10rem; opacity: 0.9;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Unggulan -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-brown fw-bold">
+                <i class="fas fa-star text-warning me-2"></i>Produk Unggulan Kami
+            </h2>
+            <div class="table-responsive shadow rounded">
+                <table class="table table-hover table-striped mb-0 bg-white">
+                    <thead class="table-dark">
+                        <tr>
+                            <th><i class="fas fa-coffee me-2"></i>Produk</th>
+                            <th><i class="fas fa-weight me-2"></i>Ukuran</th>
+                            <th><i class="fas fa-tag me-2"></i>Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kopi Arabika Gayo</strong></td>
+                            <td>250g</td>
+                            <td><span class="badge bg-success fs-6">Rp 45.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kopi Robusta Temanggung</strong></td>
+                            <td>250g</td>
+                            <td><span class="badge bg-success fs-6">Rp 38.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kopi Liberika Riau</strong></td>
+                            <td>250g</td>
+                            <td><span class="badge bg-success fs-6">Rp 42.000</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-center bg-warning bg-opacity-25 fw-bold">
+                                <i class="fas fa-info-circle me-2"></i>Semua harga sudah termasuk PPN
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-brown fw-bold">Mengapa Memilih Kami?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4">
+                        <div class="bg-gradient-brown text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-leaf fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4>100% Organik</h4>
+                            <p class="text-muted">Biji kopi pilihan langsung dari petani lokal dengan proses organik</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4">
+                        <div class="bg-gradient-brown text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-award fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4>Kualitas Premium</h4>
+                            <p class="text-muted">Setiap biji kopi melalui proses quality control yang ketat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4">
+                        <div class="bg-gradient-brown text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-shipping-fast fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4>Pengiriman Cepat</h4>
+                            <p class="text-muted">Produk segar dikirim langsung ke alamat Anda dengan cepat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+
+    <!-- CTA -->
+    <section class="py-5 bg-gradient-brown text-white text-center">
+        <div class="container">
+            <i class="fas fa-coffee fa-4x mb-4"></i>
+            <h2 class="mb-4">Siap Mencoba Kopi Terbaik Nusantara?</h2>
+            <p class="lead mb-4">Pesan sekarang dan rasakan perbedaannya!</p>
+            <a href="produk.html" class="btn btn-light btn-lg">
+                <i class="fas fa-shopping-cart me-2"></i>Pesan Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-4 position-relative">
+            <p class="mb-0">&copy; 2025 Kopi Nusantara. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

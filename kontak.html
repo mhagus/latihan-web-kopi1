@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Kami - Kopi Nusantara</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+                <img src="images/logokopi.png" alt="Logo" width="40" height="40" class="me-2 rounded-circle"/>
+                <span>KOPI NUSANTARA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html"><i class="fas fa-info-circle me-1"></i>Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produk.html"><i class="fas fa-coffee me-1"></i>Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html"><i class="fas fa-images me-1"></i>Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kontak.html"><i class="fas fa-envelope me-1"></i>Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-gradient-brown text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3"><i class="fas fa-envelope-open-text me-2"></i>Hubungi Kami</h1>
+            <p class="lead">Kami siap membantu Anda kapan saja!</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4">
+                        <div class="bg-gradient-brown text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                        </div>
+                        <h5 class="mb-2">Alamat</h5>
+                        <p class="text-muted small">Jl. Kopi Nusantara No. 123<br>Jakarta Utara, 12345</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4">
+                        <div class="bg-gradient-brown text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                            <i class="fas fa-phone fa-2x"></i>
+                        </div>
+                        <h5 class="mb-2">Telepon</h5>
+                        <p class="text-muted small mb-1"><strong>Hotline:</strong></p>
+                        <p class="text-muted small">+62 826-3457-7880</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4">
+                        <div class="bg-gradient-brown text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <h5 class="mb-2">Email</h5>
+                        <p class="text-muted small mb-1"><strong>Info:</strong></p>
+                        <p class="text-muted small">info@kopinusantara.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4">
+                        <div class="bg-gradient-brown text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                            <i class="fas fa-clock fa-2x"></i>
+                        </div>
+                        <h5 class="mb-2">Jam Kerja</h5>
+                        <p class="text-muted small mb-1"><strong>Senin - Jumat:</strong></p>
+                        <p class="text-muted small">08:00 - 20:00 WIB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0 overflow-hidden">
+                        <div class="card-header bg-gradient-brown text-white text-center py-4">
+                            <h3 class="mb-0"><i class="fas fa-paper-plane me-2"></i>Kirim Pesan</h3>
+                        </div>
+                        <div class="card-body p-4 p-md-5">
+                            <form id="formKontak">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold"><i class="fas fa-user me-1 text-primary"></i>Nama <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="nama" placeholder="Nama lengkap">
+                                        <small id="errorNama" class="text-danger"></small>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold"><i class="fas fa-envelope me-1 text-primary"></i>Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="email" placeholder="contoh@gmail.com">
+                                        <small id="errorEmail" class="text-danger"></small>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold"><i class="fas fa-calendar me-1 text-primary"></i>Tanggal Kirim <span class="text-danger">*</span></label>
+                                        <input type="date" class="form-control" id="tanggal">
+                                        <small id="errorTanggal" class="text-danger"></small>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold"><i class="fas fa-venus-mars me-1 text-primary"></i>Jenis Kelamin</label>
+                                        <select class="form-select" id="jeniskelamin">
+                                            <option value="lakilaki">Laki-Laki</option>
+                                            <option value="perempuan">Perempuan</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-bold"><i class="fas fa-tag me-1 text-primary"></i>Kategori <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="kategori">
+                                            <option value="">Pilih kategori</option>
+                                            <option value="umum">Pertanyaan Umum</option>
+                                            <option value="produk">Informasi Produk</option>
+                                            <option value="kerjasama">Kerjasama</option>
+                                            <option value="feedback">Feedback</option>
+                                        </select>
+                                        <small id="errorKategori" class="text-danger"></small>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-bold"><i class="fas fa-comment me-1 text-primary"></i>Pesan <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan (min 10 karakter)"></textarea>
+                                        <small id="errorPesan" class="text-danger"></small>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="langganan">
+                                            <label class="form-check-label" for="langganan">
+                                                <i class="fas fa-bell me-1"></i>Saya ingin menerima newsletter
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-primary w-100"><i class="fas fa-paper-plane me-2"></i>Kirim</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="reset" class="btn btn-outline-secondary w-100"><i class="fas fa-redo me-2"></i>Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+         
+            
+    <!-- CTA -->
+    <section class="py-5 bg-gradient-brown text-white text-center">
+        <div class="container">
+            <i class="fas fa-phone-volume fa-4x mb-4"></i>
+            <h2 class="mb-4">Butuh Bantuan Segera?</h2>
+            <a href="tel:+6289644869711" class="btn btn-light btn-lg me-2 mb-2"><i class="fas fa-phone me-2"></i>Telepon</a>
+            <a href="https://wa.me/6289644869711" class="btn btn-success btn-lg mb-2"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-4 position-relative">
+             <p>&copy; 2025 Kopi Nusantara. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

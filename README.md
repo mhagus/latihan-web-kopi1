@@ -1,2 +1,3 @@
-# latihan-web-kopi1
-ini merupakan website hasil latihan mata kuliah pemrograman website satu
+# Website Kopi
+
+Website ini merupakan website profil dari UMKM kopi
